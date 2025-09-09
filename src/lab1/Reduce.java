@@ -1,6 +1,6 @@
 package lab1;
 
-class Reduce {
+public class Reduce {
     
     public static void main(String[] args) {
         System.out.println(reduce(100));
