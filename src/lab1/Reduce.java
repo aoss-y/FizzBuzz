@@ -3,16 +3,20 @@ package lab1;
 class Reduce {
     
     public static void main(String[] args) {
-        int start = 100, count = 0;
-        while (start > 0) {
-            if (start % 2 == 0)
-                start /= 2;
+        System.out.println(reduce(100));
+    }
+
+    public static int reduce(int n) {
+        int count = 0;
+        while (n > 0) {
+            if (n % 2 == 0)
+                n /= 2;
             else
-                start -= 1;
+                n -= 1;
 
             count++;
         }
-
-        System.out.println(count);
+        return count;
     }
+
 }
